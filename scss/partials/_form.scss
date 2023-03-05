@@ -1,0 +1,87 @@
+//fixing forms
+
+.white{
+    padding-top: 2em;
+    margin: 0 1em;
+}
+
+form{
+
+  
+
+    ::placeholder{
+        font-size: 1.2rem;
+        color: #c5c4c7;
+    
+    }
+
+   margin: 3em 0;
+
+
+    label{
+        text-transform: uppercase;
+    }
+
+    div{
+        margin: 0.5em 0;
+    }
+    input{
+        padding: 1em;
+        border-radius: 5px;
+        // width: 100%;
+    
+        border: #c5c4c7 1px solid;
+     }
+
+
+
+    #number , #name{
+        display: flex;
+        display: inline-block;
+        width: 100%;
+        margin: 0.3em 0;
+        // width: inherit;
+        // max-width: 95%;
+    }
+
+  
+    .Cardholder-date{
+        box-sizing: border-box;
+       
+        #month , #year{
+            box-sizing: border-box;
+            width: 25%;
+            
+            
+        }
+    
+        #cvc{
+            width: 40%;
+            // padding-right: 13.333px;
+        }
+    }
+
+    
+
+.submitForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 100%;
+    
+    button{
+        
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.3rem;
+        padding: 0.8em 0;
+        text-align: center;
+        // padding: 1em 8em;
+        border-radius: 7px;
+        color: var(--myWhite);
+        background-color: var(--veryDarkViolet);
+        
+
+    }
+}
+   
+}

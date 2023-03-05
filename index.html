@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Card Template</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<main>
+			<section class="purple">
+				<!-- <img src="./images/bg-card-back.png" alt="" class="back" />
+				<img src="./images/bg-card-front.png" alt="" class="front" />
+				<div class="input-info input-number">0000 0000 0000 0000</div>
+				<div class="input-info input-name">Jane Appleseed</div>
+				<div class="input-info input-date">00/00</div>
+				<div class="input-info input-cvc">000</div> -->
+
+				<div class="back">
+					<img src="./images/bg-card-back.png" alt="" class="" />
+					<div class="input-info input-cvc" id="confirm-cvc">000</div>
+					-->
+				</div>
+				<div class="front">
+					<img src="./images/bg-card-front.png" alt="" class="" />
+					<div class="input-info input-number" id="confirm-number" >0000 0000 0000 0000</div>
+					<div class="input-info input-name" id="confirm-name">Jane Appleseed</div>
+					<div class="input-info input-date" id="confirm-date">00/00</div>
+				</div>
+			</section>
+			<section class="white">
+				<form action="#">
+					<div class="Cardholder-name">
+						<div>
+							<label for="name">Cardholder Name</label>
+						</div>
+						<div>
+							<input
+								type="text"
+								name="name"
+								id="name"
+                                required
+								placeholder="e.g. Jane Appleseed"
+                                
+							/>
+						</div>
+					</div>
+
+					<div class="Cardholder-number">
+						<div>
+							<label for="number">Card Number</label>
+						</div>
+						<div>
+							<input
+                            type="text"
+								name="number"
+								id="number"
+								placeholder="e.g. 1234 5678 9123 0000"
+                                required
+                                minlength="19"
+                                maxlength="19"
+							/>
+						</div>
+					</div>
+
+					<div class="Cardholder-date">
+						<span>
+                            <div>
+                                <label for="month">Exp. Date (MM/YY)</label>
+                            </div>
+                            <div class="newLine">
+                                <input
+                                    type="number"
+                                    name="month"
+                                    id="month"
+                                    placeholder="MM"
+                                    required
+                                    min="2"
+                                    max="2"
+                                />
+                                <input
+                                    type="number"
+                                    name="year"
+                                    id="year"
+                                    placeholder="YY"
+                                    required
+                                    minlength="2"
+                                    maxlength="2"
+                                />
+    
+                        </span>
+						
+
+                        <span class="Cardholder-cvc">
+                            <div>
+								<div>
+									<label for="cvc">CVC</label>
+								</div>
+							</div>
+							<div class="newLine">
+								<input
+									type="number"
+									name="cvc"
+									id="cvc"
+									placeholder="e.g. 123"
+                                    required
+                                    minlength="3"
+                                    maxlength="3"
+								/>
+							</div>
+                        </span>
+						
+						</div>
+					</div>
+
+					<div class="submitForm">
+						<!-- <a href="#">
+							Confirm
+						</a> -->
+						<button type="submit" value="Confirm" id="confirm">Confirm</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+        <script src="./script.js"></script>
+	</body>
+</html>

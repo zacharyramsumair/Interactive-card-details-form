@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// breakpoints 850
+
+@media (min-width: 1200px) {
+    /* … */
+ 
+
+    main{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-areas: "purple white";
+    }
+
+    .purple{
+        display: grid;
+        grid-area: purple;
+       
+        height: 100vh;
+       background-image: url(".././images/bg-main-mobile.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+    
+    }
+
+    .white{
+        display: grid;
+        grid-area: white;
+        width: 40%;
+        // height: 100vh;
+        padding-top: 2em;
+        margin:  auto;
+    }
+
+    
+    .back, .front{
+        // width: 80vw;
+        position: absolute;
+        // box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        height: 250px;
+        img{
+            width: 400px;
+        }
+  }
+
+
+  .back{
+    right: -10em;
+    top: 14em;
+    z-index: 1; 
+
+}
+
+.front{
+    left: 5em;
+    bottom: 18em;
+    z-index: 5;
+}
+
+.input-cvc{
+    right: 5.5em;
+    top: 7em;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+#cvc{
+    width: 20%;
+}
+
+}
+
+    
